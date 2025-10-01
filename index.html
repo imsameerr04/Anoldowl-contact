@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact Us — ANOLDOWL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="wrap" role="main">
+        <!-- Left column — info -->
+        <section class="panel left">
+            <div class="brand">
+                <div class="logo">AO</div>
+                <div class="brand-text">
+                    <div class="company-name">ANOLDOWL</div>
+                    <div class="small">Customer Support & Account Management</div>
+                </div>
+            </div>
+
+            <h1 class="heading">Let’s talk about improving your customer experience</h1>
+            <p class="lead">Send us a message and we’ll reply within <strong>24 hours</strong>.</p>
+
+            <div class="contact-cards">
+                <div class="card">
+                    <div class="icon">✉️</div>
+                    <div class="meta">
+                        <div class="title">Email</div>
+                        <div class="sub">support@anoldowl.com</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">📞</div>
+                    <div class="meta">
+                        <div class="title">Phone</div>
+                        <div class="sub">+91 9xxxxxxxxx</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">📍</div>
+                    <div class="meta">
+                        <div class="title">Location</div>
+                        <div class="sub">Your City, Country</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="privacy-note">We respect your privacy — we will only use your info to reply to this request.</p>
+        </section>
+
+        <!-- Right column — form -->
+        <section class="panel right">
+            <div class="form-head">
+                <div>
+                    <div class="small">Get in touch</div>
+                    <div class="form-title">Contact Us</div>
+                </div>
+                <div class="req-note">Fields marked * are required</div>
+            </div>
+
+            <form id="contactForm" novalidate>
+                <div class="row two">
+                    <div class="field">
+                        <label for="firstName">First name *</label>
+                        <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+                        <div class="err" id="err-first" aria-live="polite"></div>
+                    </div>
+                    <div class="field">
+                        <label for="lastName">Last name *</label>
+                        <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+                        <div class="err" id="err-last" aria-live="polite"></div>
+                    </div>
+                </div>
+
+                <div class="row two" style="margin-top:10px">
+                    <div class="field">
+                        <label for="email">Email address *</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <div class="err" id="err-email" aria-live="polite"></div>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 9xxxxxxx">
+                        <div class="err" id="err-phone" aria-live="polite"></div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:10px">
+                    <div class="field">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Tell us about your needs..."></textarea>
+                        <div class="err" id="err-message" aria-live="polite"></div>
+                    </div>
+                </div>
+
+                <div class="row submit-row">
+                    <button id="submitBtn" type="submit">Send message</button>
+                    <div class="helper">Or email us directly at <strong>support@anoldowl.com</strong></div>
+                </div>
+
+                <div id="formFeedback" class="form-feedback" role="status" aria-live="polite" style="display:none">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
