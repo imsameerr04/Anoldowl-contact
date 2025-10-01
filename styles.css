@@ -249,3 +249,50 @@ button[disabled] {
         padding: 16px
     }
 }
+
+/* Responsive design for tablets and phones */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
