@@ -1,5 +1,5 @@
 // Replace with your form endpoint (Formspree, Formcarry, your server). If left as the placeholder, submit will simulate success.
-const FORM_ENDPOINT = 'https://formspree.io/f/meorgyoe'; // e.g. https://formspree.io/f/your-id
+const FORM_ENDPOINT = 'https://formspree.io/f/xwprbqyw'; // e.g. https://formspree.io/f/your-id
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
